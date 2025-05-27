@@ -6,25 +6,50 @@
   <meta name="keywords" content="travel, budget travel, travel tips, destination guides, travel blog">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Budget Sky</title>
+  <title>GoFlyCheap</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" type="image/svg+xml" href="./assets/logos/budgetsky.png" />
+  <link rel="icon" type="image/svg+xml" href="./assets/logos/goflycheap.png" />
   <!-- Add Font Awesome for icons (in <head>) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script type="text/javascript">(function(i,m,p,a,c,t){c.ire_o=p;c[p]=c[p]||function(){(c[p].a=c[p].a||[]).push(arguments)};t=a.createElement(m);var z=a.getElementsByTagName(m)[0];t.async=1;t.src=i;z.parentNode.insertBefore(t,z)})('https://utt.impactcdn.com/P-A6260433-03cb-424c-a610-252595ab25d01.js','script','impactStat',document,window);impactStat('transformLinks');impactStat('trackImpression');</script>
+  <!-- Add this Tailwind config script in your <head> to define the custom color -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            naviblue: '#05203C',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 
 <body class="bg-gray-50 flex flex-col min-h-screen">
   <!-- Navbar -->
-  <nav class="relative px-5 flex justify-between items-center h-14 bg-red-600 drop-shadow-md">
+  <nav class="relative px-20 flex justify-between items-center h-25 bg-naviblue drop-shadow-md">
     <!-- Logo -->
     <div>
-      <a href="index.html" class="flex items-center space-x-2">
-        <span class="text-white text-xl font-semibold italic">BUDGET<span class="text-yellow-400">SKY</span></span>
+      <a href="index.html" class="flex items-center">
+        <img src="./assets/logos/goflycheap.png" alt="GoFlyCheap Logo" class=" h-32 w-auto object-cover m-4" />
       </a>
     </div>
     <!-- Main Nav: always visible, never hidden -->
     <div id="main-nav" class="flex flex-row items-center space-x-3 ml-10">
+      <a href="" class="text-white font-bold border border-white rounded-full px-3 py-1 mx-2 hover:underline flex items-center gap-2">
+        <img src="./assets/logos/flicht.svg" alt="Latest News" class="rounded-md h-6 w-6 object-cover filter invert">
+        Flichts
+      </a>
+      <a href="" class="text-white font-bold border border-white rounded-full px-3 py-1 mx-2 hover:underline flex items-center gap-2">
+        <img src="./assets/logos/bed.svg" alt="Latest News" class="rounded-md h-6 w-6 object-cover filter invert">
+        Hotels
+      </a>
+      <a href="" class="text-white font-bold border border-white rounded-full px-3 py-1 mx-2 hover:underline flex items-center gap-2">
+        <img src="./assets/logos/car.svg" alt="Latest News" class="rounded-md h-6 w-6 object-cover filter invert">
+        Car Rentals
+      </a>
       <!-- Search box: always visible -->
       <form class="ml-4" action="">
         <input class="w-32 md:w-48 py-1 pl-3 pr-10 rounded-full focus:outline-0" type="text" placeholder="Search..." name="search" id="blog-search">
@@ -45,13 +70,18 @@
       <!-- Sidebar -->
       <aside class="hidden lg:block w-full max-w-xs">
         <div class="bg-white rounded-xl shadow p-6 mb-6">
-          <h3 class="text-lg font-semibold mb-2">Latest News!!</h3><img src="./assets/logos/budgetsky.png"
-            alt="Latest News" class="rounded-md mb-1 h-25 w-full object-cover">
+          <h2 class="text-xl font-bold mb-4">Welcome to Go Fly Cheap</h2>
+          <p class="text-gray-600 mb-4">Your go-to travel blog for budget-friendly tips, destination guides, and travel
+            inspiration.</p>
+            <h4 class="font-bold">Linked to SkyScanner</h4>
+          <img src="./assets/logos/skyscanner.png"
+            alt="Latest News" class="rounded-md h-25 w-full object-cover">
           <div class="mb-4">
+            <h3 class="text-lg font-semibold mb-2">Latest News!!</h3>
             <h4 class="font-bold">New Website Launched</h4>
             <p class="text-xs text-gray-500 current-date"></p>
             <p class="text-gray-600">from 2025 i have redesign this website. Take a look around and let us know what you
-              think.<br><a href="contact.html" class="text-red-500 font-bold hover:underline">Contact me</a>
+              think.<br><a href="contact.html" class="text-naviblue font-bold hover:underline">Contact me</a>
             </p>
           </div>
           <div>
@@ -60,18 +90,18 @@
             <p class="text-gray-600">New bonus systems on booking websites – check it out! It can give you some extra
               holiday bonus.
               <br>
-              <a href="https://trip.tp.st/dh27TdDJ" class="text-red-500 font-bold hover:underline">Check it out!</a>
+              <a href="https://trip.tp.st/dh27TdDJ" class="text-naviblue font-bold hover:underline">Check it out!</a>
             </p>
           </div>
         </div>
         <div class="bg-white rounded-xl shadow p-6 mb-6">
           <h3 class="text-lg font-semibold mb-2">Quick Links</h3>
           <ul class="list-disc list-inside text-gray-600">
-            <li><a href="https://trip.tp.st/AvTHHTSA" class="text-red-500 font-bold hover:underline">cheap Flichts</a></li>
-            <li><a href="https://trip.tp.st/w3PUOH2Y" class="text-red-500 font-bold hover:underline">cheap Hotels</a></li>
-            <li><a href="https://trip.tp.st/tLV7CT8O" class="text-red-500 font-bold hover:underline">Car Rentals</a></li>
-            <li><a href="https://trip.tp.st/aPFPoA6K" class="text-red-500 font-bold hover:underline">Vacation Packages</a></li>
-            <li><a href="https://yesim.tp.st/73UknDtT" target="_blank" rel="noopener" class="text-red-500 font-bold hover:underline">eSIM solutions</a></li>
+            <li><a href="https://trip.tp.st/AvTHHTSA" class="text-naviblue font-bold hover:underline">cheap Flichts</a></li>
+            <li><a href="https://trip.tp.st/w3PUOH2Y" class="text-naviblue font-bold hover:underline">cheap Hotels</a></li>
+            <li><a href="https://trip.tp.st/tLV7CT8O" class="text-naviblue font-bold hover:underline">Car Rentals</a></li>
+            <li><a href="https://trip.tp.st/aPFPoA6K" class="text-naviblue font-bold hover:underline">Vacation Packages</a></li>
+            <li><a href="https://yesim.tp.st/73UknDtT" target="_blank" rel="noopener" class="text-naviblue font-bold hover:underline">eSIM solutions</a></li>
           </ul>
         </div>
         <!-- Search box styled like the sidebar -->
@@ -81,7 +111,7 @@
             <input id="blog-search"
               class="flex-1 px-3 py-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-orange-400"
               type="text" name="search_field" placeholder="Enter keywords..." />
-            <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded-r hover:bg-orange-600">Search</button>
+            <button type="submit" class="bg-naviblue text-white px-4 py-2 rounded-r hover:bg-naviblue">Search</button>
           </form>
         </div>
       </aside>
@@ -101,7 +131,7 @@
                 <p class="text-gray-600 mb-4 flex-1">Sydney dazzles with its iconic harbor, golden beaches, and relaxed
                   yet sophisticated vibe. A favorite among travelers,...</p>
                 <a href="https://trip.tp.st/IzwUrU6z"
-                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  class="inline-block bg-naviblue text-white text-base font-semibold px-4 py-2 shadow hover:bg-naviblue transition whitespace-nowrap self-start rounded-none">
                   Book now
                 </a>
               </div>
@@ -119,7 +149,7 @@
                   your partner love seafood, there’s nothing more romantic than enjoying the freshest catch with a
                   stunning ocean view. Picture savoring a....</p>
                 <a href="https://trip.tp.st/IzwUrU6z"
-                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  class="inline-block bg-naviblue text-white text-base font-semibold px-4 py-2 shadow hover:bg-naviblue transition whitespace-nowrap self-start rounded-none">
                   Book now
                 </a>
               </div>
@@ -135,7 +165,7 @@
                 <p class="text-gray-600 mb-4 flex-1">Columbus, Ohio, is a lively and fast-growing Midwestern U.S. city
                   known for its thriving arts districts, top-tier...</p>
                 <a href="https://trip.tp.st/IzwUrU6z"
-                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  class="inline-block bg-naviblue text-white text-base font-semibold px-4 py-2 shadow hover:bg-naviblue transition whitespace-nowrap self-start rounded-none">
                   Book now
                 </a>
               </div>
@@ -151,7 +181,7 @@
                 <p class="text-gray-600 mb-4 flex-1">Summer in Europe is an experience like no other. The days are long,
                   the skies are bright, and every city and coastline....</p>
                 <a href="https://trip.tp.st/IzwUrU6z"
-                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  class="inline-block bg-naviblue text-white text-base font-semibold px-4 py-2 shadow hover:bg-naviblue transition whitespace-nowrap self-start rounded-none">
                   Book now
                 </a>
               </div>
@@ -167,7 +197,7 @@
                 <p class="text-gray-600 mb-4 flex-1">Exploring Rome is exciting, simple, and full of unforgettable
                   moments. You can stand where ancient Romans once walked,...</p>
                 <a href="https://trip.tp.st/IzwUrU6z"
-                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  class="inline-block bg-naviblue text-white text-base font-semibold px-4 py-2 shadow hover:bg-naviblue transition whitespace-nowrap self-start rounded-none">
                   Book now
                 </a>
               </div>
@@ -185,7 +215,7 @@
                   responsibilities, taking time to disconnect and seek inner...
                   .</p>
                 <a href="https://trip.tp.st/IzwUrU6z"
-                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  class="inline-block bg-naviblue text-white text-base font-semibold px-4 py-2 shadow hover:bg-naviblue transition whitespace-nowrap self-start rounded-none">
                   Book now
                 </a>
               </div>
@@ -203,7 +233,7 @@
                   pristine sands, crystal-clear waters, and unspoiled natural beauty. Around the world, certain beaches
                   not only meet these idyllic expectations...</p>
                 <a href="https://trip.tp.st/IzwUrU6z"
-                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  class="inline-block bg-naviblue text-white text-base font-semibold px-4 py-2 shadow hover:bg-naviblue transition whitespace-nowrap self-start rounded-none">
                   Book now
                 </a>
               </div>
@@ -220,7 +250,7 @@
                   making unforgettable memories with your partner. The crisp air, cozy settings, and slower pace of the
                   season set the stage for a romantic...</p>
                 <a href="https://trip.tp.st/IzwUrU6z"
-                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  class="inline-block bg-naviblue text-white text-base font-semibold px-4 py-2 shadow hover:bg-naviblue transition whitespace-nowrap self-start rounded-none">
                   Book now
                 </a>
               </div>
@@ -234,15 +264,15 @@
   <!-- Footer -->
   <footer class="bg-white border-t mt-8">
     <div class="container mx-auto px-4 py-4 flex items-center justify-center gap-4 text-gray-500 text-sm">
-      <span>&copy; 2025 BugetSky. All rights reserved.</span>
+      <span>&copy; 2025 Go Fly Cheap. All rights reserved.</span>
       <a href="http://dnsexit.com">
         <img src="http://dnsexit.com/images/dns2.gif" border="0" alt="DNS Exit">
       </a>
-       <a href="about.html" class="hover:text-yellow-400">About</a>
-        <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+       <a href="about.html" class="hover:text-naviblue">About</a>
+        <a href="contact.html" class="hover:text-naviblue">Contact</a>
     </div>
     <div class="container mx-auto px-4 py-2 text-center text-xs text-gray-400">
-      <p>Powered by <a href="" class="text-red-500 hover:underline">BudgetSky</a></p>
+      <p>Powered by <a href="" class="text-naviblue hover:underline">Go Fly Cheap</a></p>
   </footer>
  
 
