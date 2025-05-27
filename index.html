@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="Go Fly Cheap - Your go-to travel blog for budget-friendly tips, destination guides, and travel inspiration.">
+  <meta name="keywords" content="travel, budget travel, travel tips, destination guides, travel blog">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Sky</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/svg+xml" href="./assets/logos/budgetsky.png" />
+  <!-- Add Font Awesome for icons (in <head>) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 flex flex-col min-h-screen">
+  <!-- Navbar -->
+  <nav class="relative px-5 flex justify-between items-center h-14 bg-red-600 drop-shadow-md">
+    <!-- Logo -->
+    <div>
+      <a href="index.html" class="flex items-center space-x-2">
+        <span class="text-white text-xl font-semibold italic">BUDGET<span class="text-yellow-400">SKY</span></span>
+      </a>
+    </div>
+    <!-- Main Nav: always visible, never hidden -->
+    <div id="main-nav" class="flex flex-row items-center space-x-3 ml-10">
+      <!-- Search box: always visible -->
+      <form class="ml-4" action="">
+        <input class="w-32 md:w-48 py-1 pl-3 pr-10 rounded-full focus:outline-0" type="text" placeholder="Search..." name="search" id="blog-search">
+        <button class="-ml-8 border-0 bg-transparent" type="submit">
+          <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="container mx-auto px-4 py-8">
+  </div>
+  <main class="flex-1 container mx-auto px-4 py-8">
+    <div class="flex flex-col lg:flex-row gap-8">
+      <!-- Sidebar -->
+      <aside class="hidden lg:block w-full max-w-xs">
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+          <h3 class="text-lg font-semibold mb-2">Latest News!!</h3><img src="./assets/logos/budgetsky.png"
+            alt="Latest News" class="rounded-md mb-1 h-25 w-full object-cover">
+          <div class="mb-4">
+            <h4 class="font-bold">New Website Launched</h4>
+            <p class="text-xs text-gray-500 current-date"></p>
+            <p class="text-gray-600">from 2025 i have redesign this website. Take a look around and let us know what you
+              think.<br><a href="contact.html" class="text-red-500 font-bold hover:underline">Contact me</a>
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold">New bonus systems Launched</h4>
+            <p class="text-xs text-gray-500 current-date"></p>
+            <p class="text-gray-600">New bonus systems on booking websites – check it out! It can give you some extra
+              holiday bonus.
+              <br>
+              <a href="https://trip.tp.st/dh27TdDJ" class="text-red-500 font-bold hover:underline">Check it out!</a>
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-xl shadow p-6 mb-6">
+          <h3 class="text-lg font-semibold mb-2">Quick Links</h3>
+          <ul class="list-disc list-inside text-gray-600">
+            <li><a href="https://trip.tp.st/AvTHHTSA" class="text-red-500 font-bold hover:underline">cheap Flichts</a></li>
+            <li><a href="https://trip.tp.st/w3PUOH2Y" class="text-red-500 font-bold hover:underline">cheap Hotels</a></li>
+            <li><a href="https://trip.tp.st/tLV7CT8O" class="text-red-500 font-bold hover:underline">Car Rentals</a></li>
+            <li><a href="https://trip.tp.st/aPFPoA6K" class="text-red-500 font-bold hover:underline">Vacation Packages</a></li>
+            <li><a href="https://yesim.tp.st/73UknDtT" target="_blank" rel="noopener" class="text-red-500 font-bold hover:underline">eSIM solutions</a></li>
+          </ul>
+        </div>
+        <!-- Search box styled like the sidebar -->
+        <div class="bg-white rounded-xl shadow p-6 mb-8">
+          <h3 class="text-lg font-semibold mb-2">Search</h3>
+          <form method="post" action="#" class="flex" onsubmit="return false;">
+            <input id="blog-search"
+              class="flex-1 px-3 py-2 border rounded-l focus:outline-none focus:ring-2 focus:ring-orange-400"
+              type="text" name="search_field" placeholder="Enter keywords..." />
+            <button type="submit" class="bg-red-500 text-white px-4 py-2 rounded-r hover:bg-orange-600">Search</button>
+          </form>
+        </div>
+      </aside>
+      <!-- Content -->
+      <section class="flex-1">
+        <div class="bg-white rounded-xl shadow p-8">
+          <!-- Blog grid -->
+          <div class="grid gap-8 grid-cols-1 md:grid-cols-2">
+            <!-- Post 1 -->
+            <div class="blog-card rounded-lg shadow p-4 flex flex-col h-full">
+              <img
+                src="https://images.unsplash.com/photo-1598989612122-abca456e137a?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Sydney Opera House and Harbour Bridge" ...>
+              <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-500 current-date"></p>
+                <h2 class="blog-title font-bold text-lg mb-2">Sydney Travel Brief: What to Know Before You Go</h2>
+                <p class="text-gray-600 mb-4 flex-1">Sydney dazzles with its iconic harbor, golden beaches, and relaxed
+                  yet sophisticated vibe. A favorite among travelers,...</p>
+                <a href="https://trip.tp.st/IzwUrU6z"
+                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  Book now
+                </a>
+              </div>
+            </div>
+            <!-- Post 2 -->
+            <div class="blog-card rounded-lg shadow p-4 flex flex-col h-full">
+              <img
+                src="https://images.unsplash.com/photo-1618055301293-494ab4c71f9f?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Rome Colosseum" ...>
+              <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-500 current-date"></p>
+                <h2 class="blog-title font-bold text-lg mb-2">Love & Lobster: Romantic Seafood Restaurants Around the
+                  World</h2>
+                <p class="text-gray-600 mb-4 flex-1">Looking to plan a date night that feels truly special? If you and
+                  your partner love seafood, there’s nothing more romantic than enjoying the freshest catch with a
+                  stunning ocean view. Picture savoring a....</p>
+                <a href="https://trip.tp.st/IzwUrU6z"
+                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  Book now
+                </a>
+              </div>
+            </div>
+            <!-- Post 3 (full width) -->
+            <div class="blog-card rounded-lg shadow p-4 flex flex-col h-full md:col-span-2">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1694475061874-c3ed70a61e33?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Columbus Ohio Skyline" class="rounded-md mb-4 h-60 w-full object-cover">
+              <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-500 current-date"></p>
+                <h2 class="blog-title font-bold text-lg mb-2">Columbus Travel Brief: What to Know Before You Go</h2>
+                <p class="text-gray-600 mb-4 flex-1">Columbus, Ohio, is a lively and fast-growing Midwestern U.S. city
+                  known for its thriving arts districts, top-tier...</p>
+                <a href="https://trip.tp.st/IzwUrU6z"
+                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  Book now
+                </a>
+              </div>
+            </div>
+            <!-- Post 4 -->
+            <div class="blog-card rounded-lg shadow p-4 flex flex-col h-full">
+              <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                alt="European Summer Beach" ...>
+              <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-500 current-date"></p>
+                <h2 class="blog-title font-bold text-lg mb-2">Catch the Sun Abroad: Great European Destinations for a
+                  Summer Vacation</h2>
+                <p class="text-gray-600 mb-4 flex-1">Summer in Europe is an experience like no other. The days are long,
+                  the skies are bright, and every city and coastline....</p>
+                <a href="https://trip.tp.st/IzwUrU6z"
+                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  Book now
+                </a>
+              </div>
+            </div>
+            <!-- Post 5 -->
+            <div class="blog-card rounded-lg shadow p-4 flex flex-col h-full">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1683126021460-c3067b9b34e5?q=80&w=2108&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Rome Street" ...>
+              <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-500 current-date"></p>
+                <h2 class="blog-title font-bold text-lg mb-2">Rome Travel Brief: What to Know Before You Go</h2>
+                <p class="text-gray-600 mb-4 flex-1">Exploring Rome is exciting, simple, and full of unforgettable
+                  moments. You can stand where ancient Romans once walked,...</p>
+                <a href="https://trip.tp.st/IzwUrU6z"
+                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  Book now
+                </a>
+              </div>
+            </div>
+            <!-- Post 6 (full width) -->
+            <div class="blog-card rounded-lg shadow p-4 flex flex-col h-full md:col-span-2">
+              <img
+                src="https://images.unsplash.com/photo-1601996759374-f9aa091f3a25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Wildlife encounters" class="rounded-md mb-4 h-60 w-full object-cover">
+              <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-500 current-date"></p>
+                <h2 class="blog-title font-bold text-lg mb-2">Find Your Zen: Visit One of These Global Spiritual
+                  Retreats</h2>
+                <p class="text-gray-600 mb-4 flex-1">In a world filled with constant connectivity and mounting
+                  responsibilities, taking time to disconnect and seek inner...
+                  .</p>
+                <a href="https://trip.tp.st/IzwUrU6z"
+                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  Book now
+                </a>
+              </div>
+            </div>
+            <!-- Post 7 -->
+            <div class="blog-card rounded-lg shadow p-4 flex flex-col h-full">
+              <img
+                src="https://images.unsplash.com/photo-1580223530509-849e0ad583ca?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Clean Beach" ...>
+              <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-500 current-date"></p>
+                <h2 class="blog-title font-bold text-lg mb-2">Walk Along the Pristine Sands: Visit the World’s Cleanest
+                  Beaches</h2>
+                <p class="text-gray-600 mb-4 flex-1">Dreaming of the perfect beach vacation often conjures images of
+                  pristine sands, crystal-clear waters, and unspoiled natural beauty. Around the world, certain beaches
+                  not only meet these idyllic expectations...</p>
+                <a href="https://trip.tp.st/IzwUrU6z"
+                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  Book now
+                </a>
+              </div>
+            </div>
+            <!-- Post 8 -->
+            <div class="blog-card rounded-lg shadow p-4 flex flex-col h-full">
+              <img
+                src="https://images.unsplash.com/photo-1614630669107-f48325791b57?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Winter Wonderland" ...>
+              <div class="flex-1 flex flex-col">
+                <p class="text-xs text-gray-500 current-date"></p>
+                <h2 class="blog-title font-bold text-lg mb-2">Winter wonderlands around the world. </h2>
+                <p class="text-gray-600 mb-4 flex-1">Winter is the perfect season for slowing down, reconnecting, and
+                  making unforgettable memories with your partner. The crisp air, cozy settings, and slower pace of the
+                  season set the stage for a romantic...</p>
+                <a href="https://trip.tp.st/IzwUrU6z"
+                  class="inline-block bg-red-500 text-white text-base font-semibold px-2 py-2 shadow hover:bg-yellow-400 hover:text-red-700 transition whitespace-nowrap self-start rounded-none">
+                  Book now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-8">
+    <div class="container mx-auto px-4 py-4 flex items-center justify-center gap-4 text-gray-500 text-sm">
+      <span>&copy; 2025 BugetSky. All rights reserved.</span>
+      <a href="http://dnsexit.com">
+        <img src="http://dnsexit.com/images/dns2.gif" border="0" alt="DNS Exit">
+      </a>
+       <a href="about.html" class="hover:text-yellow-400">About</a>
+        <a href="contact.html" class="hover:text-yellow-400">Contact</a>
+    </div>
+    <div class="container mx-auto px-4 py-2 text-center text-xs text-gray-400">
+      <p>Powered by <a href="" class="text-red-500 hover:underline">BudgetSky</a></p>
+  </footer>
+ 
+
+  <!-- Hamburger Menu Script -->
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  <script>
+    var mainNav = document.getElementById("main-nav");
+    var toggleMenuIcon = document.getElementById("toggle-menu-icon");
+
+    function toggleMenu() {
+      mainNav.classList.toggle('hidden');
+      toggleMenuIcon.classList.toggle('fa-bars');
+      toggleMenuIcon.classList.toggle('fa-times');
+    }
+  </script>
+  <!-- Search Functionality -->
+  <script>
+    document.getElementById('blog-search').addEventListener('input', function () {
+      const search = this.value.trim().toLowerCase();
+      let firstVisible = null;
+      const grid = document.querySelector('.grid'); // Select your blog grid container
+      document.querySelectorAll('.blog-card').forEach(card => {
+        const title = card.querySelector('.blog-title').textContent.trim().toLowerCase();
+        const desc = card.querySelector('p').textContent.trim().toLowerCase();
+        const match = (title.includes(search) || desc.includes(search));
+        card.style.display = match ? '' : 'none';
+        if (match && !firstVisible) firstVisible = card;
+      });
+      // Always scroll the grid into view, then scroll to the first result
+      if (search && firstVisible) {
+        setTimeout(() => {
+          grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          setTimeout(() => {
+            firstVisible.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 300); // Wait for grid scroll before scrolling to card
+        }, 100);
+      }
+    });
+  </script>
+  <!-- Current Date Script -->
+  <script>
+    document.querySelectorAll('.current-date').forEach(el => {
+      el.textContent = new Date().toLocaleDateString(undefined, {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+    });
+  </script>
+  <!-- Image Optimization Script -->
+  <script>
+    document.querySelectorAll('.blog-card img').forEach(img => {
+      let url = img.src.split('?')[0];
+      img.src = url + '?auto=format&fit=crop&w=800&q=80';
+    });
+  </script>
+</body>
+
+</html>
